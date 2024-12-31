@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    font-family: "Nunito", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.city-input {
+    width: 150px;
+    border: 1px solid hsl(0deg 0% 46.19% / 86%);
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 10px;
+    width: 250px;
+    font-weight: bold;
+}
+
+.submit-btn {
+    border: none;
+    color: white;
+    background-color: hsl(111 100% 45% / 1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: hsl(111 100% 35% / 1);
+}
+.submit-btn:active {
+    background-color: hsla(111, 100%, 35%, 0.621);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px;    
+    width: 300px;
+    gap: 12px;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(39, 100%, 65%));
+    border-radius: 8px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 5px 5px 20px 2px hsla(0, 10%, 20%, 0.269);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px 2px hsla(0, 0%, 0%, 0.387);
+}
+
+.weather-emoji {
+    font-size: 7.5rem;
+}
+.city-name, .temperature {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.humidity {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.weather-status {
+    font-weight: 700;
+    font-size: 1.7rem;
+
+}
+
+.error-display {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
